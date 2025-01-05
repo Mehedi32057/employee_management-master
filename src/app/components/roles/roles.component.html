@@ -1,5 +1,135 @@
 
 <div class="row">
+    <div class="col-12">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Sr No</th>
+                    <th>Role Name</th>
+
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of rolelist; let srno=index">
+                    <td>{{srno+1}}</td>
+                    <td>{{item.role}}</td>
+
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="row">
+    <div class="col-4">
+        <ul>
+            <li *ngFor="let item of rolelist">{{item.role}}
+
+            </li>
+        </ul>
+    </div>
+    <div class="col-4">
+        <select >
+            <option *ngFor="let item of rolelist " [value]="item.roleId">{{item.role}}</option>
+        </select>
+    </div>
+    <div class="col-4">
+        <button class="btn btn-warning mx-2" *ngFor="let item of rolelist ">{{item.role}}</button>
+    </div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<div class="row">
     <div class="col-3">
 
         <p>{{firstName}}</p>
@@ -61,4 +191,4 @@
 
 
 
-
+ -->
