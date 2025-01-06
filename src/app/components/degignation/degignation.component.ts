@@ -11,15 +11,19 @@ import { error } from 'console';
   styleUrl: './degignation.component.css'
 })
 export class DegignationComponent implements OnInit {
-  designationlist:IDesignation[]=[]
+  designationlist:IDesignation[]=[];
+  isLoader:boolean=true;
   masterService= inject(MasterService)
 
   ngOnInit(): void {
       this.masterService.getDesignation().subscribe((res:Apireponse)=>{
         this.designationlist=res.data
+        this.isLoader=false;
 
       },error=>{
         alert("Api error/Netwoek Down")
+        this.isLoader=false;
+
 
       })
   }
